@@ -10,5 +10,6 @@ Welcome to the Sudoku game! The game implements the following features.
   
 * Shows the solution to the board
 
+  * Validate for number in each row, column, and 3x3 square
   * Utilizes a backtracking algorithm to solve the board
 
