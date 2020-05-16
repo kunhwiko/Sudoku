@@ -1,7 +1,12 @@
 # Sudoku
 -----
 ### Description
-Welcome to the Sudoku game! 
+Welcome to the Sudoku game! The game implements the following features.
 
-The user is able to solve a randomized sudoku board, and is also able to look at the answer
+1. Display a 9x9 sudoku board
+  a) The board is randomized for every game
+  b) The user may specify the number of empty slots for the board
+  
+2. Shows the solution to the board
+  a) Utilizes a backtracking algorithm to solve the board
 
