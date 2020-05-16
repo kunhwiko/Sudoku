@@ -12,4 +12,12 @@ Welcome to the Sudoku game! The game implements the following features.
 
   * Validate for number in each row, column, and 3x3 square
   * Utilizes a backtracking algorithm to solve the board
+  
+* Utilizes GUI for better user experience
+
+  * User is able to see and input numbers to the board
+  * User is able to see how backtracking seeks for solution
+  
+### How to use
+Coming soon!
 
