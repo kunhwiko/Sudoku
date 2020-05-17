@@ -56,4 +56,51 @@ class CreatePuzzle{
             }
         }
     }
+
+    void fill_remaining(int start_row, int start_col){
+        // board is all filled
+        int row = start_row;
+        int col = start_col;
+        if (row == 6 && col == 6){
+            return;
+        }
+        // diagonals are already filled
+        else if (row == 3 && col == 3){
+            col += 3;
+        }
+        // move to next row 
+        else if (start_col >= 9){
+            row += 3;
+            col = 0;
+        }
+
+        // numbers sorted randomly to insert into sudoku
+        int nums[] = {1,2,3,4,5,6,7,8,9};
+        random_sort(nums,sizeof(nums)/sizeof(nums[0]));
+
+        // if an index has already been visited, we do not visit
+        set<int> used_indices; 
+        int index = 0;
+
+        // fill in a 3x3 part of the board
+        for (int i = row; i < row+3; i++){
+            for (int j = col; j < col+3; j++){
+                // continue until a value not within the row and col is found
+                while (unused_row(i, nums[index]) == false || unused_col(j,nums[index]) == false){
+                    // move to next number, or move further if the number is already used in the 3x3 square
+                    // if at the final index, start from beginning of nums vector
+                    index++;
+                    index %= 9;
+                    while (used_indices.find(index) != used_indices.end())
+                        index++;
+                        index %= 9;
+                }
+                matrix[i][j] = nums[index];
+                index++;
+                index %= 9;
+            }
+        }
+        // recursively fill in remainder of the board
+        fill_remaining(row,col+3);
+    }
 };
