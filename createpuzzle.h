@@ -30,4 +30,16 @@ class CreatePuzzle{
         this->missing = missing; 
         generate_random_puzzle();
     }
+
+    private:
+    void generate_random_puzzle(){
+        // fill in the diagonal boxes of the sudoku first 
+        fill_diagonals();
+
+        // fill the remainder of the matrix
+        fill_remaining(0,3);
+
+        // remove "missing" number of digits
+        remove_digits();
+    }
 };
