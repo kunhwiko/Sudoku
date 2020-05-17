@@ -119,4 +119,17 @@ class CreatePuzzle{
         }
         return true;
     }
+
+    void remove_digits(){
+        int number_to_delete = missing;
+        while (number_to_delete > 0){
+            int rand_row = rand()%8 ;
+            int rand_col = rand()%8 ;
+
+            if (matrix[rand_row][rand_col] == 0)
+                continue;
+            matrix[rand_row][rand_col] = 0;
+            number_to_delete--;
+        }
+    }
 };
