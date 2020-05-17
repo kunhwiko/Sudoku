@@ -42,4 +42,18 @@ class CreatePuzzle{
         // remove "missing" number of digits
         remove_digits();
     }
+
+    void fill_diagonals(){
+        for (int i = 0; i < 3; i++){
+            int nums[] = {1,2,3,4,5,6,7,8,9};
+            random_sort(nums,sizeof(nums)/sizeof(nums[0]));
+            int index = 0;
+            for (int row = 3*i; row < 3*i + 3; row++){
+                for (int col = 3*i; col < 3*i + 3; col++){
+                    matrix[row][col] = nums[index];
+                    index++;
+                }
+            }
+        }
+    }
 };
