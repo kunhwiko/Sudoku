@@ -103,4 +103,20 @@ class CreatePuzzle{
         // recursively fill in remainder of the board
         fill_remaining(row,col+3);
     }
+
+    // check if duplicate value does not exist in row
+    bool unused_row (int start_row, int val){
+        for (int i = 0; i < 9; i++){
+            if (matrix[start_row][i] == val) return false;
+        }
+        return true;
+    }
+
+    // check if duplicate value does not exist in col
+    bool unused_col (int start_col, int val){
+        for (int i = 0; i < 9; i++){
+            if (matrix[i][start_col] == val) return false;
+        }
+        return true;
+    }
 };
