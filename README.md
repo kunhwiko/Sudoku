@@ -21,3 +21,5 @@ Welcome to the Sudoku game! The game implements the following features.
 ### How to use
 Coming soon!
 
+### Files
+Coming soon!
