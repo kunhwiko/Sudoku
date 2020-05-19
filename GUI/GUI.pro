@@ -17,11 +17,13 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
     backtrack.cpp \
+    createpuzzle.cpp \
     main.cpp \
     mainwindow.cpp
 
 HEADERS += \
     ../backtrack.h \
+    ../createboard.h \
     ../createpuzzle.h \
     backtrack.h \
     createpuzzle.h \

@@ -10,16 +10,16 @@ using namespace std;
 class backtrack
 {
     private:
-    int** board;
+        int** board;
 
     public:
-    backtrack(int** matrix){
-        board = matrix;
-    }
+        backtrack(int** matrix){
+            board = matrix;
+        }
 
     private:
-    tuple<int, int> find_zero();
-    bool valid(int num, tuple<int,int> pos);
-    bool backtracking();
+        tuple<int, int> find_zero();
+        bool valid(int num, tuple<int,int> pos);
+        bool backtracking();
 };
 
