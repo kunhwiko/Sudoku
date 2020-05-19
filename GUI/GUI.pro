@@ -20,6 +20,10 @@ SOURCES += \
     mainwindow.cpp
 
 HEADERS += \
+    ../backtrack.h \
+    ../createpuzzle.h \
+    backtrack.h \
+    createpuzzle.h \
     mainwindow.h
 
 FORMS += \
