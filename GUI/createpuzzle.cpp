@@ -141,4 +141,4 @@ void createpuzzle::print_matrix()
         cout << " " << endl;
     }
 }
-}
+

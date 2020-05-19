@@ -52,9 +52,13 @@ OBJECTS_DIR   = ./
 
 ####### Files
 
-SOURCES       = ../GUI/main.cpp \
+SOURCES       = ../GUI/backtrack.cpp \
+		../GUI/createpuzzle.cpp \
+		../GUI/main.cpp \
 		../GUI/mainwindow.cpp moc_mainwindow.cpp
-OBJECTS       = main.o \
+OBJECTS       = backtrack.o \
+		createpuzzle.o \
+		main.o \
 		mainwindow.o \
 		moc_mainwindow.o
 DIST          = /Users/kunhwiko/Qt/5.14.2/clang_64/mkspecs/features/spec_pre.prf \
@@ -265,7 +269,14 @@ DIST          = /Users/kunhwiko/Qt/5.14.2/clang_64/mkspecs/features/spec_pre.prf
 		/Users/kunhwiko/Qt/5.14.2/clang_64/mkspecs/features/exceptions.prf \
 		/Users/kunhwiko/Qt/5.14.2/clang_64/mkspecs/features/yacc.prf \
 		/Users/kunhwiko/Qt/5.14.2/clang_64/mkspecs/features/lex.prf \
-		../GUI/GUI.pro ../GUI/mainwindow.h ../GUI/main.cpp \
+		../GUI/GUI.pro ../backtrack.h \
+		../createboard.h \
+		../createpuzzle.h \
+		../GUI/backtrack.h \
+		../GUI/createpuzzle.h \
+		../GUI/mainwindow.h ../GUI/backtrack.cpp \
+		../GUI/createpuzzle.cpp \
+		../GUI/main.cpp \
 		../GUI/mainwindow.cpp
 QMAKE_TARGET  = GUI
 DESTDIR       = 
@@ -744,8 +755,8 @@ distdir: FORCE
 	@test -d $(DISTDIR) || mkdir -p $(DISTDIR)
 	$(COPY_FILE) --parents $(DIST) $(DISTDIR)/
 	$(COPY_FILE) --parents /Users/kunhwiko/Qt/5.14.2/clang_64/mkspecs/features/data/dummy.cpp $(DISTDIR)/
-	$(COPY_FILE) --parents ../GUI/mainwindow.h $(DISTDIR)/
-	$(COPY_FILE) --parents ../GUI/main.cpp ../GUI/mainwindow.cpp $(DISTDIR)/
+	$(COPY_FILE) --parents ../backtrack.h ../createboard.h ../createpuzzle.h ../GUI/backtrack.h ../GUI/createpuzzle.h ../GUI/mainwindow.h $(DISTDIR)/
+	$(COPY_FILE) --parents ../GUI/backtrack.cpp ../GUI/createpuzzle.cpp ../GUI/main.cpp ../GUI/mainwindow.cpp $(DISTDIR)/
 	$(COPY_FILE) --parents ../GUI/mainwindow.ui $(DISTDIR)/
 	$(COPY_FILE) --parents GUI_en_US.ts $(DISTDIR)/
 
@@ -787,6 +798,13 @@ compiler_moc_header_clean:
 moc_mainwindow.cpp: ../GUI/mainwindow.h \
 		/Users/kunhwiko/Qt/5.14.2/clang_64/lib/QtWidgets.framework/Headers/QMainWindow \
 		/Users/kunhwiko/Qt/5.14.2/clang_64/lib/QtWidgets.framework/Headers/qmainwindow.h \
+		/Users/kunhwiko/Qt/5.14.2/clang_64/lib/QtWidgets.framework/Headers/QLabel \
+		/Users/kunhwiko/Qt/5.14.2/clang_64/lib/QtWidgets.framework/Headers/qlabel.h \
+		/Users/kunhwiko/Qt/5.14.2/clang_64/lib/QtWidgets.framework/Headers/QTableWidget \
+		/Users/kunhwiko/Qt/5.14.2/clang_64/lib/QtWidgets.framework/Headers/qtablewidget.h \
+		/Users/kunhwiko/Qt/5.14.2/clang_64/lib/QtCore.framework/Headers/QString \
+		/Users/kunhwiko/Qt/5.14.2/clang_64/lib/QtCore.framework/Headers/qstring.h \
+		../GUI/createpuzzle.h \
 		moc_predefs.h \
 		/Users/kunhwiko/Qt/5.14.2/clang_64/bin/moc
 	/Users/kunhwiko/Qt/5.14.2/clang_64/bin/moc $(DEFINES) --include /Users/kunhwiko/Documents/programming/C:C++/Project/Sudoku/build-GUI-Desktop_Qt_5_14_2_clang_64bit-Debug/moc_predefs.h -I/Users/kunhwiko/Qt/5.14.2/clang_64/mkspecs/macx-clang -I/Users/kunhwiko/Documents/programming/C:C++/Project/Sudoku/GUI -I/Users/kunhwiko/Qt/5.14.2/clang_64/lib/QtWidgets.framework/Headers -I/Users/kunhwiko/Qt/5.14.2/clang_64/lib/QtGui.framework/Headers -I/Users/kunhwiko/Qt/5.14.2/clang_64/lib/QtCore.framework/Headers -I. -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/11.0.3/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include -I/Library/Developer/CommandLineTools/usr/include -F/Users/kunhwiko/Qt/5.14.2/clang_64/lib ../GUI/mainwindow.h -o moc_mainwindow.cpp
@@ -814,9 +832,22 @@ compiler_clean: compiler_moc_predefs_clean compiler_moc_header_clean compiler_ui
 
 ####### Compile
 
+backtrack.o: ../GUI/backtrack.cpp ../GUI/backtrack.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o backtrack.o ../GUI/backtrack.cpp
+
+createpuzzle.o: ../GUI/createpuzzle.cpp ../GUI/createpuzzle.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o createpuzzle.o ../GUI/createpuzzle.cpp
+
 main.o: ../GUI/main.cpp ../GUI/mainwindow.h \
 		/Users/kunhwiko/Qt/5.14.2/clang_64/lib/QtWidgets.framework/Headers/QMainWindow \
 		/Users/kunhwiko/Qt/5.14.2/clang_64/lib/QtWidgets.framework/Headers/qmainwindow.h \
+		/Users/kunhwiko/Qt/5.14.2/clang_64/lib/QtWidgets.framework/Headers/QLabel \
+		/Users/kunhwiko/Qt/5.14.2/clang_64/lib/QtWidgets.framework/Headers/qlabel.h \
+		/Users/kunhwiko/Qt/5.14.2/clang_64/lib/QtWidgets.framework/Headers/QTableWidget \
+		/Users/kunhwiko/Qt/5.14.2/clang_64/lib/QtWidgets.framework/Headers/qtablewidget.h \
+		/Users/kunhwiko/Qt/5.14.2/clang_64/lib/QtCore.framework/Headers/QString \
+		/Users/kunhwiko/Qt/5.14.2/clang_64/lib/QtCore.framework/Headers/qstring.h \
+		../GUI/createpuzzle.h \
 		/Users/kunhwiko/Qt/5.14.2/clang_64/lib/QtWidgets.framework/Headers/QApplication \
 		/Users/kunhwiko/Qt/5.14.2/clang_64/lib/QtWidgets.framework/Headers/qapplication.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o main.o ../GUI/main.cpp
@@ -824,6 +855,13 @@ main.o: ../GUI/main.cpp ../GUI/mainwindow.h \
 mainwindow.o: ../GUI/mainwindow.cpp ../GUI/mainwindow.h \
 		/Users/kunhwiko/Qt/5.14.2/clang_64/lib/QtWidgets.framework/Headers/QMainWindow \
 		/Users/kunhwiko/Qt/5.14.2/clang_64/lib/QtWidgets.framework/Headers/qmainwindow.h \
+		/Users/kunhwiko/Qt/5.14.2/clang_64/lib/QtWidgets.framework/Headers/QLabel \
+		/Users/kunhwiko/Qt/5.14.2/clang_64/lib/QtWidgets.framework/Headers/qlabel.h \
+		/Users/kunhwiko/Qt/5.14.2/clang_64/lib/QtWidgets.framework/Headers/QTableWidget \
+		/Users/kunhwiko/Qt/5.14.2/clang_64/lib/QtWidgets.framework/Headers/qtablewidget.h \
+		/Users/kunhwiko/Qt/5.14.2/clang_64/lib/QtCore.framework/Headers/QString \
+		/Users/kunhwiko/Qt/5.14.2/clang_64/lib/QtCore.framework/Headers/qstring.h \
+		../GUI/createpuzzle.h \
 		ui_mainwindow.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o mainwindow.o ../GUI/mainwindow.cpp
 

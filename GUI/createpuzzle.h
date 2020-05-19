@@ -42,7 +42,7 @@ class createpuzzle
         bool unused_row(int start_row, int val);
         bool unused_col(int start_col, int val);
         void remove_digits();
-        void random_sort();
+        void random_sort(int arr[], int n);
 
     public:
         int** get_matrix();

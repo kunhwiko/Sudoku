@@ -263,6 +263,1372 @@ border : 1px solid gray;</string>
      <enum>Qt::Vertical</enum>
     </property>
    </widget>
+   <widget class="QTableWidget" name="sudoku_board">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>5</y>
+      <width>360</width>
+      <height>270</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border : 2px solid gray</string>
+    </property>
+    <property name="verticalScrollBarPolicy">
+     <enum>Qt::ScrollBarAlwaysOff</enum>
+    </property>
+    <property name="horizontalScrollBarPolicy">
+     <enum>Qt::ScrollBarAlwaysOff</enum>
+    </property>
+    <property name="sizeAdjustPolicy">
+     <enum>QAbstractScrollArea::AdjustToContentsOnFirstShow</enum>
+    </property>
+    <property name="rowCount">
+     <number>9</number>
+    </property>
+    <property name="columnCount">
+     <number>9</number>
+    </property>
+    <attribute name="horizontalHeaderVisible">
+     <bool>false</bool>
+    </attribute>
+    <attribute name="horizontalHeaderDefaultSectionSize">
+     <number>40</number>
+    </attribute>
+    <attribute name="horizontalHeaderHighlightSections">
+     <bool>false</bool>
+    </attribute>
+    <attribute name="verticalHeaderVisible">
+     <bool>false</bool>
+    </attribute>
+    <attribute name="verticalHeaderDefaultSectionSize">
+     <number>30</number>
+    </attribute>
+    <attribute name="verticalHeaderHighlightSections">
+     <bool>false</bool>
+    </attribute>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <column/>
+    <column/>
+    <column/>
+    <column/>
+    <column/>
+    <column/>
+    <column/>
+    <column/>
+    <column/>
+    <item row="0" column="0">
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="font">
+      <font>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="186">
+        <red>104</red>
+        <green>204</green>
+        <blue>74</blue>
+       </color>
+      </brush>
+     </property>
+    </item>
+    <item row="0" column="1">
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="186">
+        <red>104</red>
+        <green>204</green>
+        <blue>74</blue>
+       </color>
+      </brush>
+     </property>
+    </item>
+    <item row="0" column="2">
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="186">
+        <red>104</red>
+        <green>204</green>
+        <blue>74</blue>
+       </color>
+      </brush>
+     </property>
+    </item>
+    <item row="0" column="3">
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="191">
+        <red>235</red>
+        <green>238</green>
+        <blue>18</blue>
+       </color>
+      </brush>
+     </property>
+    </item>
+    <item row="0" column="4">
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="191">
+        <red>235</red>
+        <green>238</green>
+        <blue>18</blue>
+       </color>
+      </brush>
+     </property>
+    </item>
+    <item row="0" column="5">
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="191">
+        <red>235</red>
+        <green>238</green>
+        <blue>18</blue>
+       </color>
+      </brush>
+     </property>
+    </item>
+    <item row="0" column="6">
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="191">
+        <red>106</red>
+        <green>50</green>
+        <blue>216</blue>
+       </color>
+      </brush>
+     </property>
+    </item>
+    <item row="0" column="7">
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="191">
+        <red>106</red>
+        <green>50</green>
+        <blue>216</blue>
+       </color>
+      </brush>
+     </property>
+    </item>
+    <item row="0" column="8">
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="191">
+        <red>106</red>
+        <green>50</green>
+        <blue>216</blue>
+       </color>
+      </brush>
+     </property>
+    </item>
+    <item row="1" column="0">
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="186">
+        <red>104</red>
+        <green>204</green>
+        <blue>74</blue>
+       </color>
+      </brush>
+     </property>
+    </item>
+    <item row="1" column="1">
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="186">
+        <red>104</red>
+        <green>204</green>
+        <blue>74</blue>
+       </color>
+      </brush>
+     </property>
+    </item>
+    <item row="1" column="2">
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="186">
+        <red>104</red>
+        <green>204</green>
+        <blue>74</blue>
+       </color>
+      </brush>
+     </property>
+    </item>
+    <item row="1" column="3">
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="191">
+        <red>235</red>
+        <green>238</green>
+        <blue>18</blue>
+       </color>
+      </brush>
+     </property>
+    </item>
+    <item row="1" column="4">
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="191">
+        <red>235</red>
+        <green>238</green>
+        <blue>18</blue>
+       </color>
+      </brush>
+     </property>
+    </item>
+    <item row="1" column="5">
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="191">
+        <red>235</red>
+        <green>238</green>
+        <blue>18</blue>
+       </color>
+      </brush>
+     </property>
+    </item>
+    <item row="1" column="6">
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="191">
+        <red>106</red>
+        <green>50</green>
+        <blue>216</blue>
+       </color>
+      </brush>
+     </property>
+    </item>
+    <item row="1" column="7">
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="191">
+        <red>106</red>
+        <green>50</green>
+        <blue>216</blue>
+       </color>
+      </brush>
+     </property>
+    </item>
+    <item row="1" column="8">
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="191">
+        <red>106</red>
+        <green>50</green>
+        <blue>216</blue>
+       </color>
+      </brush>
+     </property>
+    </item>
+    <item row="2" column="0">
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="186">
+        <red>104</red>
+        <green>204</green>
+        <blue>74</blue>
+       </color>
+      </brush>
+     </property>
+    </item>
+    <item row="2" column="1">
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="186">
+        <red>104</red>
+        <green>204</green>
+        <blue>74</blue>
+       </color>
+      </brush>
+     </property>
+    </item>
+    <item row="2" column="2">
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="186">
+        <red>104</red>
+        <green>204</green>
+        <blue>74</blue>
+       </color>
+      </brush>
+     </property>
+    </item>
+    <item row="2" column="3">
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="191">
+        <red>235</red>
+        <green>238</green>
+        <blue>18</blue>
+       </color>
+      </brush>
+     </property>
+    </item>
+    <item row="2" column="4">
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="191">
+        <red>235</red>
+        <green>238</green>
+        <blue>18</blue>
+       </color>
+      </brush>
+     </property>
+    </item>
+    <item row="2" column="5">
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="191">
+        <red>235</red>
+        <green>238</green>
+        <blue>18</blue>
+       </color>
+      </brush>
+     </property>
+    </item>
+    <item row="2" column="6">
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="191">
+        <red>106</red>
+        <green>50</green>
+        <blue>216</blue>
+       </color>
+      </brush>
+     </property>
+    </item>
+    <item row="2" column="7">
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="191">
+        <red>106</red>
+        <green>50</green>
+        <blue>216</blue>
+       </color>
+      </brush>
+     </property>
+    </item>
+    <item row="2" column="8">
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="191">
+        <red>106</red>
+        <green>50</green>
+        <blue>216</blue>
+       </color>
+      </brush>
+     </property>
+    </item>
+    <item row="3" column="0">
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+    </item>
+    <item row="3" column="1">
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+    </item>
+    <item row="3" column="2">
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+    </item>
+    <item row="3" column="3">
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="191">
+        <red>253</red>
+        <green>134</green>
+        <blue>240</blue>
+       </color>
+      </brush>
+     </property>
+    </item>
+    <item row="3" column="4">
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="191">
+        <red>253</red>
+        <green>134</green>
+        <blue>240</blue>
+       </color>
+      </brush>
+     </property>
+    </item>
+    <item row="3" column="5">
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="191">
+        <red>253</red>
+        <green>134</green>
+        <blue>240</blue>
+       </color>
+      </brush>
+     </property>
+    </item>
+    <item row="3" column="6">
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="191">
+        <red>126</red>
+        <green>222</green>
+        <blue>248</blue>
+       </color>
+      </brush>
+     </property>
+    </item>
+    <item row="3" column="7">
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="191">
+        <red>126</red>
+        <green>222</green>
+        <blue>248</blue>
+       </color>
+      </brush>
+     </property>
+    </item>
+    <item row="3" column="8">
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="191">
+        <red>126</red>
+        <green>222</green>
+        <blue>248</blue>
+       </color>
+      </brush>
+     </property>
+    </item>
+    <item row="4" column="0">
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+    </item>
+    <item row="4" column="1">
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+    </item>
+    <item row="4" column="2">
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+    </item>
+    <item row="4" column="3">
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="191">
+        <red>253</red>
+        <green>134</green>
+        <blue>240</blue>
+       </color>
+      </brush>
+     </property>
+    </item>
+    <item row="4" column="4">
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="191">
+        <red>253</red>
+        <green>134</green>
+        <blue>240</blue>
+       </color>
+      </brush>
+     </property>
+    </item>
+    <item row="4" column="5">
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="191">
+        <red>253</red>
+        <green>134</green>
+        <blue>240</blue>
+       </color>
+      </brush>
+     </property>
+    </item>
+    <item row="4" column="6">
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="191">
+        <red>126</red>
+        <green>222</green>
+        <blue>248</blue>
+       </color>
+      </brush>
+     </property>
+    </item>
+    <item row="4" column="7">
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="191">
+        <red>126</red>
+        <green>222</green>
+        <blue>248</blue>
+       </color>
+      </brush>
+     </property>
+    </item>
+    <item row="4" column="8">
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="191">
+        <red>126</red>
+        <green>222</green>
+        <blue>248</blue>
+       </color>
+      </brush>
+     </property>
+    </item>
+    <item row="5" column="0">
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+    </item>
+    <item row="5" column="1">
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+    </item>
+    <item row="5" column="2">
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+    </item>
+    <item row="5" column="3">
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="191">
+        <red>253</red>
+        <green>134</green>
+        <blue>240</blue>
+       </color>
+      </brush>
+     </property>
+    </item>
+    <item row="5" column="4">
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="191">
+        <red>253</red>
+        <green>134</green>
+        <blue>240</blue>
+       </color>
+      </brush>
+     </property>
+    </item>
+    <item row="5" column="5">
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="191">
+        <red>253</red>
+        <green>134</green>
+        <blue>240</blue>
+       </color>
+      </brush>
+     </property>
+    </item>
+    <item row="5" column="6">
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="191">
+        <red>126</red>
+        <green>222</green>
+        <blue>248</blue>
+       </color>
+      </brush>
+     </property>
+    </item>
+    <item row="5" column="7">
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="191">
+        <red>126</red>
+        <green>222</green>
+        <blue>248</blue>
+       </color>
+      </brush>
+     </property>
+    </item>
+    <item row="5" column="8">
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="191">
+        <red>126</red>
+        <green>222</green>
+        <blue>248</blue>
+       </color>
+      </brush>
+     </property>
+    </item>
+    <item row="6" column="0">
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="186">
+        <red>253</red>
+        <green>152</green>
+        <blue>82</blue>
+       </color>
+      </brush>
+     </property>
+    </item>
+    <item row="6" column="1">
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="186">
+        <red>253</red>
+        <green>152</green>
+        <blue>82</blue>
+       </color>
+      </brush>
+     </property>
+    </item>
+    <item row="6" column="2">
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="186">
+        <red>253</red>
+        <green>152</green>
+        <blue>82</blue>
+       </color>
+      </brush>
+     </property>
+    </item>
+    <item row="6" column="3">
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="191">
+        <red>157</red>
+        <green>253</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </property>
+    </item>
+    <item row="6" column="4">
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="191">
+        <red>157</red>
+        <green>253</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </property>
+    </item>
+    <item row="6" column="5">
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="191">
+        <red>157</red>
+        <green>253</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </property>
+    </item>
+    <item row="6" column="6">
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="191">
+        <red>206</red>
+        <green>52</green>
+        <blue>77</blue>
+       </color>
+      </brush>
+     </property>
+    </item>
+    <item row="6" column="7">
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="191">
+        <red>206</red>
+        <green>52</green>
+        <blue>77</blue>
+       </color>
+      </brush>
+     </property>
+    </item>
+    <item row="6" column="8">
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="191">
+        <red>206</red>
+        <green>52</green>
+        <blue>77</blue>
+       </color>
+      </brush>
+     </property>
+    </item>
+    <item row="7" column="0">
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="186">
+        <red>253</red>
+        <green>152</green>
+        <blue>82</blue>
+       </color>
+      </brush>
+     </property>
+    </item>
+    <item row="7" column="1">
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="186">
+        <red>253</red>
+        <green>152</green>
+        <blue>82</blue>
+       </color>
+      </brush>
+     </property>
+    </item>
+    <item row="7" column="2">
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="186">
+        <red>253</red>
+        <green>152</green>
+        <blue>82</blue>
+       </color>
+      </brush>
+     </property>
+    </item>
+    <item row="7" column="3">
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="191">
+        <red>157</red>
+        <green>253</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </property>
+    </item>
+    <item row="7" column="4">
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="191">
+        <red>157</red>
+        <green>253</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </property>
+    </item>
+    <item row="7" column="5">
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="191">
+        <red>157</red>
+        <green>253</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </property>
+    </item>
+    <item row="7" column="6">
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="191">
+        <red>206</red>
+        <green>52</green>
+        <blue>77</blue>
+       </color>
+      </brush>
+     </property>
+    </item>
+    <item row="7" column="7">
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="191">
+        <red>206</red>
+        <green>52</green>
+        <blue>77</blue>
+       </color>
+      </brush>
+     </property>
+    </item>
+    <item row="7" column="8">
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="191">
+        <red>206</red>
+        <green>52</green>
+        <blue>77</blue>
+       </color>
+      </brush>
+     </property>
+    </item>
+    <item row="8" column="0">
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="186">
+        <red>253</red>
+        <green>152</green>
+        <blue>82</blue>
+       </color>
+      </brush>
+     </property>
+    </item>
+    <item row="8" column="1">
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="186">
+        <red>253</red>
+        <green>152</green>
+        <blue>82</blue>
+       </color>
+      </brush>
+     </property>
+    </item>
+    <item row="8" column="2">
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="186">
+        <red>253</red>
+        <green>152</green>
+        <blue>82</blue>
+       </color>
+      </brush>
+     </property>
+    </item>
+    <item row="8" column="3">
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="191">
+        <red>157</red>
+        <green>253</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </property>
+    </item>
+    <item row="8" column="4">
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="191">
+        <red>157</red>
+        <green>253</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </property>
+    </item>
+    <item row="8" column="5">
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="191">
+        <red>157</red>
+        <green>253</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </property>
+    </item>
+    <item row="8" column="6">
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="191">
+        <red>206</red>
+        <green>52</green>
+        <blue>77</blue>
+       </color>
+      </brush>
+     </property>
+    </item>
+    <item row="8" column="7">
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="191">
+        <red>206</red>
+        <green>52</green>
+        <blue>77</blue>
+       </color>
+      </brush>
+     </property>
+    </item>
+    <item row="8" column="8">
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="191">
+        <red>206</red>
+        <green>52</green>
+        <blue>77</blue>
+       </color>
+      </brush>
+     </property>
+    </item>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
