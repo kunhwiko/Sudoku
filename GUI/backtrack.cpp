@@ -54,7 +54,7 @@ bool backtrack::backtracking(){
     for (int i = 1; i < 10; i++){
         if (valid(i, find_coord) == true){
             board[row][col] = i;
-            if (backtracking() == true) return true;
+            if (backtrack::backtracking() == true) return true;
             board[row][col] = 0;
         }
     }
