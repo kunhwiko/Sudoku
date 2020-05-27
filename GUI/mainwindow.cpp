@@ -39,11 +39,13 @@ void MainWindow::on_sudoku_board_cellClicked(int row, int column)
 
 void MainWindow::alter_slot(int num)
 {
-    QTableWidgetItem* cell = ui->sudoku_board->item(curr_row,curr_col);
-    cp->get_matrix()[curr_row][curr_col] = num;
-    QString str = "";
-    str += '0' + cp->get_matrix()[curr_row][curr_col];
-    cell -> setText(str);
+    if (cp->get_original()[curr_row][curr_col] == 0){
+        QTableWidgetItem* cell = ui->sudoku_board->item(curr_row,curr_col);
+        cp->get_matrix()[curr_row][curr_col] = num;
+        QString str = "";
+        str += '0' + cp->get_matrix()[curr_row][curr_col];
+        cell -> setText(str);
+    }
 }
 
 void MainWindow::on_button1_clicked()

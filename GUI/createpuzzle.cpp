@@ -116,16 +116,30 @@ void createpuzzle::random_sort(int arr[], int n)
     }
 }
 
+void createpuzzle::copy_original()
+{
+    for (int i = 0; i < 9; i++){
+        for(int j = 0; j < 9; j++){
+            original[i][j] = matrix[i][j];
+        }
+    }
+}
+
 int** createpuzzle::get_matrix()
 {
     return this->matrix;
+}
+
+int** createpuzzle::get_original()
+{
+    return this->original;
 }
 
 void createpuzzle::reset()
 {
     for (int i = 0; i < 9; i++){
         for (int j = 0; j < 9; j++){
-            matrix[i][j] = original[i][j];
+            matrix[i][j] = 5;
         }
     }
 }
