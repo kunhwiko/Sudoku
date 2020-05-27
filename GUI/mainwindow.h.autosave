@@ -25,6 +25,10 @@ private slots:
 
     void on_button1_clicked();
 
+    void on_button2_clicked();
+    
+    void on_button3_clicked();
+    
 private:
     Ui::MainWindow *ui;
     int curr_row;
