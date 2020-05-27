@@ -86,3 +86,13 @@ void MainWindow::on_button9_clicked()
 {
     alter_slot(9);
 }
+
+void MainWindow::on_Clear_clicked()
+{
+    alter_slot(0);
+}
+
+void MainWindow::on_Reset_clicked()
+{
+    cp -> reset();
+}

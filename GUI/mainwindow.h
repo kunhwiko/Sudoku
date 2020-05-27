@@ -41,6 +41,10 @@ private slots:
 
     void on_button9_clicked();
 
+    void on_Clear_clicked();
+
+    void on_Reset_clicked();
+
 private:
     Ui::MainWindow *ui;
     int curr_row;
