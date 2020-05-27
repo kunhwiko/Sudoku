@@ -42,6 +42,7 @@ public:
     QFrame *line_3;
     QFrame *line_4;
     QTableWidget *sudoku_board;
+    QPushButton *Reset;
     QMenuBar *menubar;
     QStatusBar *statusbar;
 
@@ -111,7 +112,7 @@ public:
         Clear->setGeometry(QRect(440, 180, 161, 31));
         Solution = new QPushButton(centralwidget);
         Solution->setObjectName(QString::fromUtf8("Solution"));
-        Solution->setGeometry(QRect(440, 240, 161, 31));
+        Solution->setGeometry(QRect(520, 240, 101, 31));
         line = new QFrame(centralwidget);
         line->setObjectName(QString::fromUtf8("line"));
         line->setGeometry(QRect(415, 0, 211, 16));
@@ -478,6 +479,7 @@ public:
         sudoku_board->setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
         sudoku_board->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
         sudoku_board->setSizeAdjustPolicy(QAbstractScrollArea::AdjustToContentsOnFirstShow);
+        sudoku_board->setEditTriggers(QAbstractItemView::NoEditTriggers);
         sudoku_board->setRowCount(9);
         sudoku_board->setColumnCount(9);
         sudoku_board->horizontalHeader()->setVisible(false);
@@ -486,6 +488,9 @@ public:
         sudoku_board->verticalHeader()->setVisible(false);
         sudoku_board->verticalHeader()->setDefaultSectionSize(30);
         sudoku_board->verticalHeader()->setHighlightSections(false);
+        Reset = new QPushButton(centralwidget);
+        Reset->setObjectName(QString::fromUtf8("Reset"));
+        Reset->setGeometry(QRect(420, 240, 101, 31));
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName(QString::fromUtf8("menubar"));
@@ -681,6 +686,7 @@ public:
         ___qtablewidgetitem80->setText(QCoreApplication::translate("MainWindow", "0", nullptr));
         sudoku_board->setSortingEnabled(__sortingEnabled);
 
+        Reset->setText(QCoreApplication::translate("MainWindow", "Reset", nullptr));
     } // retranslateUi
 
 };

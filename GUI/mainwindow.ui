@@ -201,9 +201,9 @@ border : 1px solid gray;</string>
    <widget class="QPushButton" name="Solution">
     <property name="geometry">
      <rect>
-      <x>440</x>
+      <x>520</x>
       <y>240</y>
-      <width>161</width>
+      <width>101</width>
       <height>31</height>
      </rect>
     </property>
@@ -283,6 +283,9 @@ border : 1px solid gray;</string>
     </property>
     <property name="sizeAdjustPolicy">
      <enum>QAbstractScrollArea::AdjustToContentsOnFirstShow</enum>
+    </property>
+    <property name="editTriggers">
+     <set>QAbstractItemView::NoEditTriggers</set>
     </property>
     <property name="rowCount">
      <number>9</number>
@@ -1628,6 +1631,19 @@ border : 1px solid gray;</string>
       </brush>
      </property>
     </item>
+   </widget>
+   <widget class="QPushButton" name="Reset">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>240</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Reset</string>
+    </property>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
