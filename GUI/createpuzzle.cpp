@@ -21,7 +21,6 @@ void createpuzzle::fill_diagonals()
         for (int row = 3*i; row < 3*i + 3; row++){
             for (int col = 3*i; col < 3*i + 3; col++){
                 matrix[row][col] = nums[index];
-                original[row][col] = nums[index];
                 index++;
             }
         }
@@ -68,7 +67,6 @@ void createpuzzle::fill_remaining(int start_row, int start_col)
                     index %= 9;
             }
             matrix[i][j] = nums[index];
-            original[i][j] = nums[index];
             index++;
             index %= 9;
         }
@@ -103,7 +101,6 @@ void createpuzzle::remove_digits()
         if (matrix[rand_row][rand_col] == 0)
             continue;
         matrix[rand_row][rand_col] = 0;
-        original[rand_row][rand_col] = 0;
         number_to_delete--;
     }
 }
@@ -122,11 +119,6 @@ void createpuzzle::random_sort(int arr[], int n)
 int** createpuzzle::get_matrix()
 {
     return this->matrix;
-}
-
-int** createpuzzle::get_original()
-{
-    return this->original;
 }
 
 void createpuzzle::reset()

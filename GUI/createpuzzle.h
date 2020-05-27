@@ -19,10 +19,8 @@ class createpuzzle
     public:
         createpuzzle(){
             matrix = new int*[9];
-            original = new int*[9];
             for (int i = 0; i < 9; i++){
                 matrix[i] = new int[9];
-                original[i] = new int[9];
             }
             missing = 25;
             generate_random_puzzle();
@@ -31,10 +29,8 @@ class createpuzzle
         // configure number of values that are missing
         createpuzzle(int missing){
             matrix = new int*[9];
-            original = new int*[9];
             for (int i = 0; i < 9; i++){
                 matrix[i] = new int[9];
-                original[i] = new int[9];
             }
             this->missing = missing;
             generate_random_puzzle();
@@ -51,7 +47,6 @@ class createpuzzle
 
     public:
         int** get_matrix();
-        int** get_original();
         void reset();
         void free_matrix();
         void print_matrix();

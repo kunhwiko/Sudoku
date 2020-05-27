@@ -16,6 +16,10 @@ MainWindow::MainWindow(QWidget *parent)
             QString str = "";
             str += '0' + cp->get_matrix()[i][j];
             square -> setText(str);
+            if (cp->get_matrix()[i][j] == 0){
+                QColor c(255,0,0);
+                square -> setForeground(c);
+            }
         }
     }
 
