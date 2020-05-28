@@ -139,13 +139,17 @@ void createpuzzle::reset()
 {
     for (int i = 0; i < 9; i++){
         for (int j = 0; j < 9; j++){
-            matrix[i][j] = 5;
+            matrix[i][j] = original[i][j];
         }
     }
 }
 
 void createpuzzle::free_matrix()
 {
+    for (int i = 0; i < 9; i++){
+        delete this->matrix[i];
+        delete this->original[i];
+    }
     delete this->matrix;
     delete this->original;
 }
