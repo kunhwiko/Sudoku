@@ -5,9 +5,12 @@
 #include <QLabel>
 #include <QTableWidget>
 #include <QString>
-#include <createpuzzle.h>
-#include <backtrack.h>
+#include <QTimer>
+
 #include <iostream>
+#include <chrono>
+#include <thread>
+#include "createpuzzle.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -53,5 +56,9 @@ private:
     int curr_row;
     int curr_col;
     void alter_slot(int num);
+
+    tuple<int, int> find_zero();
+    bool valid(int num, tuple<int,int> pos);
+    bool backtracking();
 };
 #endif // MAINWINDOW_H
