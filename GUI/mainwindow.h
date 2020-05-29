@@ -6,6 +6,7 @@
 #include <QTableWidget>
 #include <QString>
 #include <createpuzzle.h>
+#include <backtrack.h>
 #include <iostream>
 
 QT_BEGIN_NAMESPACE
@@ -44,6 +45,8 @@ private slots:
     void on_Clear_clicked();
 
     void on_Reset_clicked();
+
+    void on_Solution_clicked();
 
 private:
     Ui::MainWindow *ui;

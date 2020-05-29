@@ -43,7 +43,7 @@ bool backtrack::valid(int num, tuple<int,int> pos){
 }
 
 bool backtrack::backtracking(){
-    tuple<int,int> find_coord = find_zero();
+    tuple<int,int> find_coord = backtrack::find_zero();
 
     // once base case is reached, end the backtracking
     if (get<0>(find_coord) == -1)
@@ -52,7 +52,7 @@ bool backtrack::backtracking(){
     int row = get<0>(find_coord);
     int col = get<1>(find_coord);
     for (int i = 1; i < 10; i++){
-        if (valid(i, find_coord) == true){
+        if (backtrack::valid(i, find_coord) == true){
             board[row][col] = i;
             if (backtrack::backtracking() == true) return true;
             board[row][col] = 0;

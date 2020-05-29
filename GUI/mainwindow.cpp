@@ -46,6 +46,7 @@ void MainWindow::alter_slot(int num)
         str += '0' + cp->get_matrix()[curr_row][curr_col];
         cell -> setText(str);
     }
+    repaint();
 }
 
 void MainWindow::on_button1_clicked()
@@ -101,4 +102,18 @@ void MainWindow::on_Clear_clicked()
 void MainWindow::on_Reset_clicked()
 {
     cp -> reset();
+    for(int i = 0; i < 9; i++){
+        for(int j = 0; j < 9; j++){
+            QTableWidgetItem* square = ui->sudoku_board->item(i,j);
+            QString str = "";
+            str += '0' + cp->get_matrix()[i][j];
+            square -> setText(str);
+        }
+    }
+    repaint();
+}
+
+void MainWindow::on_Solution_clicked()
+{
+
 }

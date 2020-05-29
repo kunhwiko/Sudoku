@@ -15,8 +15,8 @@ class createpuzzle
         int **original;
         int missing;
 
-    // by default, 25 values are missing
     public:
+        // by default, 25 values are missing
         createpuzzle(){
             matrix = new int*[9];
             original = new int*[9];
