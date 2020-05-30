@@ -19,7 +19,7 @@ Welcome to the Sudoku game! The game implements the following features :)
   * User is able to see how backtracking seeks for a solution
   
 ### Rules
-Rules of the Sudoku game in the link below :
+Rules of the Sudoku game in the link :
 https://sudoku.com/how-to-play/sudoku-rules-for-complete-beginners/ 
 
   1) All slots in red can be altered, select one of the slots to start
