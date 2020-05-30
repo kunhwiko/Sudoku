@@ -2,7 +2,6 @@
 #include "ui_mainwindow.h"
 
 createpuzzle* cp = new createpuzzle();
-int a = 0;
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -158,7 +157,6 @@ bool MainWindow::valid(int num, tuple<int,int> pos){
                 return false;
         }
     }
-
     return true;
 }
 
@@ -180,7 +178,7 @@ bool MainWindow::backtracking(){
             str += '0' + cp->get_matrix()[row][col];
             square -> setText(str);
             update();
-            std::this_thread::sleep_for(std::chrono::milliseconds(200));
+            this_thread::sleep_for(chrono::milliseconds(200));
             qApp -> processEvents();
 
             if (MainWindow::backtracking() == true) return true;
