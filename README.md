@@ -30,8 +30,8 @@ https://sudoku.com/how-to-play/sudoku-rules-for-complete-beginners/
 
 ### Compile and Run
   1) Download folder and move directory to downloaded path
-  2) qmake 
-  3) make
+  2) In terminal, type "qmake" 
+  3) In terminal, type "make"
   4) Look for GUI file and play the game :)
   
 ### Files
