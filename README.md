@@ -22,7 +22,9 @@ Welcome to the Sudoku game! The game implements the following features :)
 Rules of the Sudoku game in the link below :
 https://sudoku.com/how-to-play/sudoku-rules-for-complete-beginners/ 
 
- * All slots in red can be altered, press numbers  
+ 1) All slots in red can be altered, select one of the slots to start
+ 2) Press a number to change the number in the slot, or press clear to restart
+ 3) If stuck, press the solution button to see how backtracking reaches a solution!
 
 ### Files
 * createpuzzle.h / createpuzzle.cpp
