@@ -18,8 +18,11 @@ Welcome to the Sudoku game! The game implements the following features :)
   * User is able to play a game of sudoku by inputting numbers to empty slots
   * User is able to see how backtracking seeks for a solution
   
-### How to use
-Coming soon!
+### Rules
+Rules of the Sudoku game in the link below :
+https://sudoku.com/how-to-play/sudoku-rules-for-complete-beginners/ 
+
+ * All slots in red can be altered, press numbers  
 
 ### Files
 * createpuzzle.h / createpuzzle.cpp
