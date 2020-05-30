@@ -28,6 +28,12 @@ https://sudoku.com/how-to-play/sudoku-rules-for-complete-beginners/
  
 ![](Images/Example.png)
 
+### Compile and Run
+  1) Download folder and move directory to downloaded path
+  2) qmake 
+  3) make
+  4) Look for GUI file and play the game :)
+  
 ### Files
 * createpuzzle.h / createpuzzle.cpp
 
