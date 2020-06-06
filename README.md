@@ -41,8 +41,8 @@ https://sudoku.com/how-to-play/sudoku-rules-for-complete-beginners/
 
 * mainwindow.h / mainwindow.cpp / mainwindow.ui
 
-  * Uses Qt and C++ to visualize a sudoku board where user can input numbers 
-  * Uses Qt and C++ to visualize how backtracking solves the board 
+  * Uses Qt, CSS, and C++ to visualize a sudoku board where user can input numbers 
+  * Uses Qt, CSS, and C++ to visualize how backtracking solves the board 
   
 * GUI.pro / main.cpp
 
