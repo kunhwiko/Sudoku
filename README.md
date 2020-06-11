@@ -1,5 +1,4 @@
 # Sudoku
------
 ### Description
 Welcome to the Sudoku game! The game implements the following features :)
 
@@ -17,7 +16,7 @@ Welcome to the Sudoku game! The game implements the following features :)
 
   * User is able to play a game of sudoku by inputting numbers to empty slots
   * User is able to see how backtracking seeks for a solution
-  
+-----  
 ### Rules
 Rules of the Sudoku game in the link :
 https://sudoku.com/how-to-play/sudoku-rules-for-complete-beginners/ 
@@ -27,13 +26,13 @@ https://sudoku.com/how-to-play/sudoku-rules-for-complete-beginners/
   3) If stuck, press the solution button to see how backtracking reaches a solution!
  
 ![](Images/Example.png)
-
+-----
 ### Compile and Run
   1) Download folder
   2) In terminal, move directory to downloaded path
   3) In terminal, type "qmake" followed by "make"
   4) Look for GUI file and play the game :)
-  
+-----  
 ### Files
 * createpuzzle.h / createpuzzle.cpp
 
