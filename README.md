@@ -1,4 +1,5 @@
 # Sudoku
+-----
 ### Description
 Welcome to the Sudoku game! The game implements the following features :)
 
@@ -26,6 +27,7 @@ https://sudoku.com/how-to-play/sudoku-rules-for-complete-beginners/
   3) If stuck, press the solution button to see how backtracking reaches a solution!
  
 ![](Images/Example.png)
+
 -----
 ### Compile and Run
   1) Download folder
