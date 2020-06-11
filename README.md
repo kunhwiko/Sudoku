@@ -1,6 +1,6 @@
 # Sudoku
------
 ### Description
+-----
 Welcome to the Sudoku game! The game implements the following features :)
 
 * Displays a 9x9 sudoku board
@@ -16,9 +16,9 @@ Welcome to the Sudoku game! The game implements the following features :)
 * Uses a GUI to visually show the board and solution
 
   * User is able to play a game of sudoku by inputting numbers to empty slots
-  * User is able to see how backtracking seeks for a solution
------  
+  * User is able to see how backtracking seeks for a solution 
 ### Rules
+-----
 Rules of the Sudoku game in the link :
 https://sudoku.com/how-to-play/sudoku-rules-for-complete-beginners/ 
 
